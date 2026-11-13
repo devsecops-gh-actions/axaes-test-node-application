@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   Validation:
-    uses: devsecops-gh-actions/shared-workflows/.github/workflows/bot-validator.yml@REPLACE_SHA_SHARED_WORKFLOWS
+    uses: devsecops-gh-actions/shared-workflows/.github/workflows/bot-validator.yml@1fac042b77217a956a73759e8d090c819560b0ea
     permissions:
       contents: read
       pull-requests: write
