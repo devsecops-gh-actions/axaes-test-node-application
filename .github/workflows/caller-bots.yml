@@ -1,0 +1,21 @@
+# Caller de bots de axaes-template-node-application.
+# Check requerido: "Validation / conventions" y "Validation / workflows-and-iac" (PLAN.md 2.1 y 2.8).
+# Reutilizable bot-validator.yml en shared-workflows (PLAN 2.8). Sus scripts viven en devsecops-gh-actions/bots (bots/validator).
+name: Bots
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  Validation:
+    uses: devsecops-gh-actions/shared-workflows/.github/workflows/bot-validator.yml@REPLACE_SHA_SHARED_WORKFLOWS
+    permissions:
+      contents: read
+      pull-requests: write
+    with:
+      validator-repository: devsecops-gh-actions/bots
+      validator-ref: REPLACE_SHA_SHARED_WORKFLOWS

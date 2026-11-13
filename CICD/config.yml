@@ -1,0 +1,16 @@
+# Configuración del repo (PLAN.md 2.5; referencia Jenkins, seccion 1).
+# La fuente de verdad son las custom properties de GitHub; este fichero las refleja para el bot y las métricas.
+kind: application
+stack: node
+deploy-target: none
+team: platform-templates
+data-classification: internal
+has-containers: false
+has-iac: false
+deployable: false
+build:
+  working-directory: "."
+  matrix: {}
+metrics:
+  technology: node
+  platform: none

@@ -1,0 +1,6 @@
+# CODEOWNERS de axaes-template-node-application (plantilla devsecops-scaffold, PLAN.md WS1).
+# Equipo propietario: platform-templates. Verificar que el equipo existe en acme-templates.
+# /.github/ requiere al equipo de autoridad DEVSECOPS: provisional hasta que se confirme el equipo real.
+*                     @acme-templates/platform-templates
+/.github/             @devsecops-gh-actions/devsecops-approvers
+/CICD/                @acme-templates/platform-templates

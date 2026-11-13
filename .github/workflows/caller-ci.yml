@@ -1,0 +1,28 @@
+# Caller de integración continua de axaes-template-node-application (generado por devsecops-scaffold).
+# Check requerido: "CI / build-and-test" (PLAN.md 2.1): job "CI" que llama a ci-<stack>.yml (job build-and-test).
+# Los reutilizables viven en devsecops-gh-actions/shared-workflows/.github/workflows/ (PLAN 2.1, 2.6).
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Mínimo común; cada job declara lo suyo.
+permissions:
+  contents: read
+
+jobs:
+  CI:
+    # verificar: sustituir REPLACE_SHA_SHARED_WORKFLOWS por el SHA completo de shared-workflows antes de producción
+    uses: devsecops-gh-actions/shared-workflows/.github/workflows/ci-node.yml@REPLACE_SHA_SHARED_WORKFLOWS
+    with:
+      kind: application
+      run-tests: true
+      publish: false
+    permissions:
+      contents: read
+
+
+
