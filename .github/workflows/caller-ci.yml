@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   CI:
-    uses: devsecops-gh-actions/shared-workflows/.github/workflows/ci-node.yml@1fac042b77217a956a73759e8d090c819560b0ea
+    uses: devsecops-gh-actions/shared-workflows/.github/workflows/ci-node.yml@bb94195f0e8e0b60bc5420d676dfacdb528427ae
     with:
       kind: application
       run-tests: true
