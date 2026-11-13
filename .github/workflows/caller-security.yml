@@ -13,7 +13,7 @@ permissions:
 jobs:
   security:
     name: Security
-    uses: devsecops-gh-actions/shared-workflows/.github/workflows/security.yml@1fac042b77217a956a73759e8d090c819560b0ea
+    uses: devsecops-gh-actions/shared-workflows/.github/workflows/security.yml@bb94195f0e8e0b60bc5420d676dfacdb528427ae
     permissions:
       contents: read
       actions: read
