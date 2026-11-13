@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.mjs",
   "scripts": {
-    "build": "node --check src/index.mjs",
+    "build": "node --check src/index.mjs && node -e \"require('node:fs').cpSync('src', 'dist', { recursive: true })\"",
     "test": "node --test"
   }
 }
