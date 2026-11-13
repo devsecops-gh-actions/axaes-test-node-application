@@ -20,6 +20,6 @@ jobs:
       security-events: write
       packages: read
     with:
-      languages: "javascript-typescript"
+      codeql-languages: "javascript-typescript"
       dependency-fail-on-severity: high
       require-push-protection: true

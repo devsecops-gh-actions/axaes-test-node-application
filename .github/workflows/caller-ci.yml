@@ -15,7 +15,6 @@ permissions:
 
 jobs:
   CI:
-    # verificar: sustituir REPLACE_SHA_SHARED_WORKFLOWS por el SHA completo de shared-workflows antes de producción
     uses: devsecops-gh-actions/shared-workflows/.github/workflows/ci-node.yml@1fac042b77217a956a73759e8d090c819560b0ea
     with:
       kind: application
