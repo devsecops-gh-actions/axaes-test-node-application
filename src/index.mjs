@@ -1,7 +1,15 @@
-// Ejemplo mínimo: función pura con test. Sustituir por el código del producto.
-export function greet(name) {
+// Ejemplo mínimo: funciones puras con tests. Sustituir por el código del producto.
+function nombreValido(name) {
   if (typeof name !== 'string' || name.trim() === '') {
     throw new TypeError('name debe ser una cadena no vacía');
   }
-  return `Hola, ${name.trim()}!`;
+  return name.trim();
+}
+
+export function greet(name) {
+  return `Hola, ${nombreValido(name)}!`;
+}
+
+export function farewell(name) {
+  return `Adiós, ${nombreValido(name)}!`;
 }
