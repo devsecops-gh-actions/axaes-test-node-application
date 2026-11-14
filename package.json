@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.mjs",
   "scripts": {
-    "build": "node --check src/index.mjs",
+    "build": "node --check src/index.mjs && mkdir -p dist && cp src/index.mjs dist/",
     "test": "node --test"
   }
 }

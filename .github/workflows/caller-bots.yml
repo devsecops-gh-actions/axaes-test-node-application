@@ -17,5 +17,5 @@ jobs:
       contents: read
       pull-requests: write
     with:
-      validator-repository: devsecops-gh-actions/bots
-      validator-ref: ""  # vacío = mismo commit que bot-validator.yml
+      validator-repository: xa-devsecops-office/xa-devsecops-platform-bots
+      validator-ref: "main"
