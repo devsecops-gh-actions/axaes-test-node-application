@@ -5,3 +5,4 @@ export function greet(name) {
   }
   return `Hola, ${name.trim()}!`;
 }
+// prueba del circuito
